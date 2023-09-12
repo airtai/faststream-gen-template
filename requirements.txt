@@ -1,0 +1,1 @@
+faststream[kafka, testing]==0.0.1.dev20230912
