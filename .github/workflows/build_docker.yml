@@ -3,8 +3,7 @@ on:
     push:
       branches:
         - master
-        - main
-        - add-dockerfile # TODO: Remove this before merging to main
+        - main # TODO: Remove this file before merging to main
 
 jobs:
   build_docker:
