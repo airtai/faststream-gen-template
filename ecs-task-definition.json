@@ -4,7 +4,7 @@
     "containerDefinitions": [
         {
             "name": "faststream_gen_container", 
-            "image": "617504802562.dkr.ecr.eu-central-1.amazonaws.com/faststream_gen:latest", 
+            "image": "617504802562.dkr.ecr.us-east-2.amazonaws.com/faststream_gen:latest",
             "portMappings": [
                 {
                     "containerPort": 80, 
