@@ -1,0 +1,24 @@
+{
+    "family": "faststream_gen_family", 
+    "networkMode": "awsvpc", 
+    "containerDefinitions": [
+        {
+            "name": "faststream_gen_container", 
+            "image": "617504802562.dkr.ecr.us-east-2.amazonaws.com/faststream_gen:latest",
+            "portMappings": [
+                {
+                    "containerPort": 80, 
+                    "hostPort": 80, 
+                    "protocol": "tcp"
+                }
+            ], 
+            "essential": true
+        }
+    ], 
+    "requiresCompatibilities": [
+        "FARGATE"
+    ], 
+    "cpu": "256", 
+    "memory": "512",
+    "executionRoleArn": "arn:aws:iam::617504802562:role/ecsTaskExecutionRole"
+}
