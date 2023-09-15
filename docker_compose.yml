@@ -7,7 +7,7 @@ networks:
 services:
   kafka:
     image: bitnami/kafka:3.5.0
-    # conatiner_name: bitnami-kafka
+    container_name: bitnami_kafka
     networks:
       - faststream-app-tier
     ports:
@@ -22,7 +22,6 @@ services:
       - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=true
       - ALLOW_PLAINTEXT_LISTENER=true
     healthcheck:
-      # test: ["CMD-SHELL", "kafka-topics.sh --bootstrap-server kafka:9092 --topic hc --create --if-not-exists && kafka-topics.sh --bootstrap-server kafka:9092 --topic hc --describe"]
       test: ["CMD-SHELL", "kafka-topics.sh --bootstrap-server kafka:9092 --list"]
       start_period: 10s
       interval: 5s
@@ -35,6 +34,6 @@ services:
       kafka:
         condition: service_healthy
     image: faststream-app:latest
-    # container_name: faststream-app
+    container_name: faststream_app
     networks:
       - faststream-app-tier
