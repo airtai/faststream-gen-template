@@ -1,2 +1,2 @@
-faststream[docs, kafka, testing]==0.0.1.dev20230913
+faststream[docs]==0.0.1.dev20230913
 PyYAML==6.0.1

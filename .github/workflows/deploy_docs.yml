@@ -4,7 +4,6 @@ on:
       branches:
         - master
         - main
-        - add-pages-deploy  # TODO: Remove this before merging to main
 
 jobs:
   deploy_docs:
