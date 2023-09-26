@@ -1,2 +1,2 @@
-faststream[docs]==0.1.4
+faststream[docs]==0.1.5
 PyYAML==6.0.1
